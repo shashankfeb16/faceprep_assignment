@@ -6,7 +6,7 @@ const initialState = {
   isAuth: false,
 };
 
-export const Reducer = (state = initialState, { type, payload }) => {
+export const Reducer = (state = initialState, { type }) => {
   switch (type) {
     case LOGIN_LOADING: {
       return { ...state, loading: true, error: false, isAuth: false };
