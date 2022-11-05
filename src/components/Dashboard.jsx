@@ -50,12 +50,12 @@ const Dashboard = () => {
             justifyContent="center"
             gap="20px"
             marginTop="20px">
-              <Box>
-                <Text>
+              <Box display="flex" flexDirection="column">
+                <Text as="em" fontWeight="bold">
                   Name:{" "}
                   {el.name.title + " " + el.name.first + " " + el.name.last}
                 </Text>
-                <Text>{el.gender}</Text>
+                <Text as="em" fontWeight="bold">Gender:{" "}{el.gender}</Text>
               </Box>
               <Box>
                 <Image

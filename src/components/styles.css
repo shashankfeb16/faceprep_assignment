@@ -1,0 +1,13 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 70px;
+    background-color: aqua;
+}
+.text{
+    margin-top: 20px;
+    color: violet;
+    font-weight: bold;
+
+}
