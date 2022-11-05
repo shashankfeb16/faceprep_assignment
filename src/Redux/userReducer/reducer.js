@@ -1,4 +1,4 @@
-import { LOGIN_ERROR, LOGIN_LOADING, LOGIN_SUCCESS } from "./action.types";
+import { LOGIN_ERROR, LOGIN_LOADING, LOGIN_SUCCESS, LOGOUT } from "./action.types";
 
 const initialState = {
   loading: false,
@@ -16,6 +16,9 @@ export const Reducer = (state = initialState, { type }) => {
     }
     case LOGIN_ERROR: {
       return { ...state, loading: false, error: true, isAuth: false };
+    }
+    case LOGOUT:{
+      return { ...state, loading: false, error: false, isAuth: false };
     }
     default: {
       return state;
